@@ -1,0 +1,97 @@
+body{
+background-color: White;
+box-sizing: border-box;
+}
+.main{
+    padding-top: 2rem;
+    display: flex;
+    margin-top: 2rem;       
+}
+
+.textOnInput {
+
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .textOnInput input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .textOnInput .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+  
+  .textOnInput input.dirty + .placeholder,
+  .textOnInput input:valid + .placeholder,
+  .textOnInput input:focus + .placeholder {
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+  }
+  .textOnInput.one input {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }  
+  .textOnInput.one input + .placeholder {
+    left: 8px;
+    padding: 0 5px;
+  }  
+  .textOnInput.one input.dirty,
+  .textOnInput.one input:valid,
+  .textOnInput.one input:focus {
+    border-color: #222;
+    transition-delay: 0.1s
+  }
+  
+  .textOnInput.one input.dirty + .placeholder,
+  .textOnInput.one input:valid + .placeholder,
+  .textOnInput.one input:focus + .placeholder {
+    top: 20px;
+    font-size: 10px;
+    color: #222;
+    background: #fff;
+  }
+	
+.list{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    
+    
+}
+
+.right-div{
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.submit{
+    background-color: rgb(52,42,218);
+	background-image: linear-gradient(90deg, rgba(52,42,218,1) 0%, rgba(56,54,205,1) 0%, rgba(77,80,185,1) 58%, rgba(107,29,158,1) 100%);
+	border: none;
+}
+.btn-group {width: 100%}
+
+  .dropdown-menu {min-width:100%;}
+
